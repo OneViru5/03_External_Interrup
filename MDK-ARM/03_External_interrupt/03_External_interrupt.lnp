@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"03_external_interrupt\startup_stm32f303xc.o"
+"03_external_interrupt\system_stm32f3xx.o"
+"03_external_interrupt\stm32f3xx_hal.o"
+"03_external_interrupt\stm32f3xx_hal_flash_ex.o"
+"03_external_interrupt\stm32f3xx_hal_i2c_ex.o"
+"03_external_interrupt\stm32f3xx_hal_tim_ex.o"
+"03_external_interrupt\stm32f3xx_hal_pwr.o"
+"03_external_interrupt\stm32f3xx_hal_rcc.o"
+"03_external_interrupt\stm32f3xx_hal_tim.o"
+"03_external_interrupt\stm32f3xx_hal_flash.o"
+"03_external_interrupt\stm32f3xx_hal_gpio.o"
+"03_external_interrupt\stm32f3xx_hal_rcc_ex.o"
+"03_external_interrupt\stm32f3xx_hal_i2c.o"
+"03_external_interrupt\stm32f3xx_hal_dma.o"
+"03_external_interrupt\stm32f3xx_hal_cortex.o"
+"03_external_interrupt\stm32f3xx_hal_pwr_ex.o"
+"03_external_interrupt\stm32f3xx_hal_msp.o"
+"03_external_interrupt\main.o"
+"03_external_interrupt\stm32f3xx_it.o"
+--library_type=microlib --strict --scatter "03_External_interrupt\03_External_interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "03_External_interrupt.map" -o 03_External_interrupt\03_External_interrupt.axf
